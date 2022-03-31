@@ -1,0 +1,24 @@
+:root {
+	--blue100: #0688b4;
+	--blue200: #03698b;
+	--blue300: #025773;
+	--blue400: #01445b;
+	--blue500: #002e3d;
+
+	--orange100: #ff8300;
+	--orange200: #de7200;
+	--orange300: #b85e00;
+	--orange400: #914a00;
+	--orange500: #623200;
+
+	--black: #000c12;
+	--grey100: #afb3b5;
+	--grey200: #717679;
+	--grey300: #383f42;
+
+	--white: #f2f4f5;
+
+	--primary: var(--grey100);
+	--secondary: var(--black);
+	--highlight: var(--blue100);
+}

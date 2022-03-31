@@ -1,0 +1,10 @@
+ul.posts {
+	color: var(--primary);
+	a {
+		font-size: 1.8rem;
+
+		&:hover {
+			color: var(--blue200);
+		}
+	}
+}
