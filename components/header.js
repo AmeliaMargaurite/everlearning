@@ -5,13 +5,13 @@ class Header extends HTMLElement {
 
 	connectedCallback() {
 		const lightMode = {
-			"--primary": "var(--black)",
-			"--secondary": "var(--grey100)",
+			"--primary": "var(--dark)",
+			"--secondary": "var(--light)",
 		};
 
 		const darkMode = {
-			"--primary": "var(--grey100)",
-			"--secondary": "var(--black)",
+			"--primary": "var(--light)",
+			"--secondary": "var(--dark)",
 		};
 
 		const setDarkMode = () => {
@@ -39,17 +39,17 @@ class Header extends HTMLElement {
 			<div class='menu'>
 				<div class='menu--switch' id='switch' ></div>
 				<ul>
-					<a href="/" class="${activePage === "home" ? "active" : ""}">
+					<a href="{{ . | relative_url }}" class="${activePage === "home" ? "active" : ""}">
 						<li>
 						Home
 						</li>
 					</a>
-					<a href="/projects.html" class="${activePage === "projects" ? "active" : ""}">
+					<a href="projects.html" class="${activePage === "projects" ? "active" : ""}">
 						<li>
 						Projects
 						</li>
 					</a>
-					<a href="/digital-garden.html" class="${activePage === "digital-garden" ? "active" : ""}">
+					<a href="digital-garden.html" class="${activePage === "digital-garden" ? "active" : ""}">
 						<li>
 						Digital Garden
 						</li>

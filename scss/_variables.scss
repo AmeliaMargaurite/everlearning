@@ -15,10 +15,12 @@
 	--grey100: #afb3b5;
 	--grey200: #717679;
 	--grey300: #383f42;
-
 	--white: #f2f4f5;
 
-	--primary: var(--grey100);
-	--secondary: var(--black);
+	--light: var(--white);
+	--dark: var(--black);
+
+	--primary: var(--light);
+	--secondary: var(--dark);
 	--highlight: var(--blue100);
 }

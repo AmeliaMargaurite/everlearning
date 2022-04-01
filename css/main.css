@@ -14,8 +14,10 @@
   --grey200: #717679;
   --grey300: #383f42;
   --white: #f2f4f5;
-  --primary: var(--grey100);
-  --secondary: var(--black);
+  --light: var(--white);
+  --dark: var(--black);
+  --primary: var(--light);
+  --secondary: var(--dark);
   --highlight: var(--blue100);
 }
 
@@ -120,12 +122,12 @@ html {
 }
 
 body {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 body * {
   font-size: 1.6rem;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 h1 {
