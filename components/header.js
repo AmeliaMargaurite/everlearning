@@ -39,17 +39,23 @@ class Header extends HTMLElement {
 			<div class='menu'>
 				<div class='menu--switch' id='switch' ></div>
 				<ul>
-					<a href="{{ . | relative_url }}" class="${activePage === "home" ? "active" : ""}">
+					<a href="https://ameliamargaurite.github.io/everlearning/" class="${
+						activePage === "home" ? "active" : ""
+					}">
 						<li>
 						Home
 						</li>
 					</a>
-					<a href="projects.html" class="${activePage === "projects" ? "active" : ""}">
+					<a href="https://ameliamargaurite.github.io/everlearning/projects.html" class="${
+						activePage === "projects" ? "active" : ""
+					}">
 						<li>
 						Projects
 						</li>
 					</a>
-					<a href="digital-garden.html" class="${activePage === "digital-garden" ? "active" : ""}">
+					<a href="https://ameliamargaurite.github.io/everlearning/digital-garden.html" class="${
+						activePage === "digital-garden" ? "active" : ""
+					}">
 						<li>
 						Digital Garden
 						</li>

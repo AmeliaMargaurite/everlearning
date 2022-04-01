@@ -18,7 +18,7 @@ class PostsMenu extends HTMLElement {
             <ul class='posts'>
                 ${Object.keys(posts).map((postUrl) => {
                     const post = posts[postUrl];
-                    return `<li><a href="/digital-garden/${postUrl}.html">${post.title}</a></li>`;
+                    return `<li><a href="https://ameliamargaurite.github.io/everlearning/digital-garden/${postUrl}.html">${post.title}</a></li>`;
                 })}
             </ul>
         `;
