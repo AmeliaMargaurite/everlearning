@@ -122,12 +122,27 @@ html {
 }
 
 body {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content auto max-content;
+      grid-template-rows: -webkit-max-content auto -webkit-max-content;
+      grid-template-rows: max-content auto max-content;
   background: var(--secondary);
+  max-width: 100rem;
+  min-height: 100vh;
+  margin: auto;
 }
 
 body * {
   font-size: 1.6rem;
   color: var(--primary);
+}
+
+img.ivy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 h1 {
@@ -146,6 +161,13 @@ h4 {
   font-size: 2rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5em;
+}
+
 h1 *,
 h2 *,
 h3 *,
@@ -153,7 +175,7 @@ h4 * {
   font-size: inherit;
 }
 
-a {
-  text-decoration: none;
+div.content a {
+  padding: 0 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */

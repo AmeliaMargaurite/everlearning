@@ -1,6 +1,7 @@
 class CarbonBadge extends HTMLElement {
 	constructor() {
 		super();
+		// this.attachShadow({ mode: "open" });
 	}
 
 	connectedCallback() {
@@ -10,7 +11,7 @@ class CarbonBadge extends HTMLElement {
 					colorMode === "dark" ? "wcb-d" : ""
 				}">
                 </div>
-        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        
         `;
 	}
 }

@@ -1,6 +1,12 @@
 {
     "sustainable-web-development": {
         "title": "Sustainable Web Development",
-        "progress": "0"
+        "progress": "0",
+        "tags": ["web development", "environment", "global warming"]
+    },
+    "web-components": {
+        "title": "Web Components",
+        "progress": "0",
+        "tags": ["web development", "environment", "learning"]
     }
 }

@@ -6,10 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="components/header.js" type="text/javascript" defer></script>
 		<script
-			src="components/carbon-badge.js"
+			src="components/page-footer.js"
 			type="text/javascript"
 			defer
 		></script>
+		<script
+			src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+			defer
+		></script>
+
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +29,11 @@
 		<header>
 			<header-component activePage="projects"></header-component>
 		</header>
-		<!-- Body -->
-		<carbon-badge></carbon-badge>
+		<!-- Start Content -->
+		<div class="content"></div>
+		<!-- End Content-->
+		<page-footer>
+			<div id="wcb" class="carbonbadge"></div>
+		</page-footer>
 	</body>
 </html>

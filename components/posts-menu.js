@@ -12,14 +12,20 @@ class PostsMenu extends HTMLElement {
 
 	async connectedCallback() {
 		await this.getPosts().then((posts) => {
+			let list = "";
+			for (const postUrl in posts) {
+				const post = posts[postUrl];
+				list += `
+					<li>
+						<a href="/digital-garden/${postUrl}.html">${post.title}</a>
+					</li>
+				`;
+			}
+
 			//prettier-ignore
 			this.innerHTML = `
-
             <ul class='posts'>
-                ${Object.keys(posts).map((postUrl) => {
-                    const post = posts[postUrl];
-                    return `<li><a href="digital-garden/${postUrl}.html">${post.title}</a></li>`;
-                })}
+                ${list}
             </ul>
         `;
 		});
