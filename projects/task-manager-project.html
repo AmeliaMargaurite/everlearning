@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- START Imports for Garden Pages -->
+
+		<script
+			src="../js/components/components.js"
+			type="module"
+			type="text/javascript"
+		></script>
+
+		<link rel="stylesheet" href="../css/main.css" />
+
+		<!-- END Imports for Garden Pages -->
+		<title>Task Manager Project</title>
+	</head>
+	<body>
+		<header>
+			<header-component activePage="garden"></header-component>
+		</header>
+		<!-- Start Content -->
+		<div class="content">
+			<section class="cols-3">
+				<h1>Reinventing the Wheel</h1>
+				<p>
+					Out there in the wide world there are 100 billion<span class="tidbit"
+						>*<span class="hidden">roughly</span></span
+					>
+					task manager/note taking/organisational apps. And yet I cannot find
+					one that works for me. By works for me I mean improves my level of
+					organisation, flows naturally with what I need, without extra
+					flourishes I never use.
+					<br />
+					<br />
+					I have in the past used Asana and in my previous job we used Jira to
+					organise work tickets. Both are great. However, for me, they are just
+					that bit more than I need. Asana especially visually is too crowded
+					for me to feel comfortable. I tend to have a lot of jobs on the go at
+					once, and visually I prefer to see a large amount of them at once,
+					instead of having to scroll. Asana task tiles seem to take up so much
+					space I can only fit a handful on the screen at once. A lot of the
+					reason for this seems to be to display the avatar they desperately
+					want you to have. Which is another thing. If one creates a task, but
+					doesn't assign it to someone, the avatar remains blank. Which is super
+					annoying when I, a one-woman-band, need to assign myself a task simply
+					because the UX experience is icky otherwise.
+					<br />
+					<br />
+					I can of course ignore these things and work just fine if need be.
+					However I currently have the luxury of time in that I am spending some
+					time studying, building my own things before jumping back into
+					freelancing later in the year. So...
+					<strong>custom task manager, here I come!</strong>
+				</p>
+			</section>
+			<section>
+				<h3>Objective</h3>
+				<p>
+					Build a custom task manager tailored to my needs to improve
+					organisation and efficiency accross web development projects, as well
+					as personal tasks.
+				</p>
+				<div>
+				<h5>Pain Points</h5>
+				<ul>
+					<li>
+						Overly complicated/unnecessary inputs
+						<em>eg. avatars, assigning tasks</em>
+					</li>
+					<li>
+						Inability (or perhaps I just never found) to add tasks to a daily
+						list, from separate projects for easy overview
+					</li>
+					<li>Design too large, need a compact view.</li>
+				</ul>
+				</div><div>
+				<h5>Solutions</h5>
+				<ul>
+					<li>
+						Only basic inputs I find I require. This will change over time, I know. Already I have a couple of features I'd like to implement which require extra fields than are there currently. </em>
+					</li>
+					<li>
+						The home page will be an overview of all projects, with counters of tasks in each stage. From here there will be the option to open an overview of all projects tasks and add individual ones to the days list. 
+					</li>
+					<li>Variable design of tiles depending on stage they're at. Current tasks are slightly larger, showing more of the description, than the To Do's, which show more again than the Completed list. I find there to be little reason to keep Completed tasks, at least beyond their titles. I think in the future I will also archive these tasks once they've been completed for X number of days.</li>
+				</ul>
+				</div>
+			</section>
+			<section class="cols-2">
+				<h3>Process</h3>
+				<p>
+					Originally I made this task manager using
+					<a href="https://preactjs.com/" target="_blank" class="content--link"
+						>Preact</a
+					>
+					and simply saving to the local storage. This worked great for just
+					hosting through
+					<a
+						href="https://code.visualstudio.com/"
+						target="_blank"
+						class="content--link"
+						>VSCode's</a
+					>
+					local server option. Except that I play with localStorage enough that
+					I have wiped the data more than once. This does not make for a super
+					useful working tool. So I decided to go with a SQL database hook up.
+					<br /><br />Unfortunately I couldn't get the Preact build to load
+					properly on my local server (AMPPS). I believe there's ways with using
+					webpack as a compiler, but to be honest, I couldn't be bothered. I'm
+					not interested in being weighed down by adding extra dependencies.
+					More and more I just want to make things as tidy and fast and
+					lightweight as possible, and the idea of using complilers does not
+					seem worth it at all.
+				</p>
+			</section>
+		</div>
+		<!-- End Content -->
+		<page-footer>
+			<div id="wcb" class="carbonbadge"></div>
+		</page-footer>
+	</body>
+</html>

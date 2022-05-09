@@ -197,11 +197,21 @@ h4 {
   font-size: 2rem;
 }
 
+h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  -webkit-column-span: all;
+          column-span: all;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
+  -webkit-column-span: all;
+          column-span: all;
 }
 
 h1 *,
@@ -209,6 +219,20 @@ h2 *,
 h3 *,
 h4 * {
   font-size: inherit;
+}
+
+section {
+  margin-top: 1.6rem;
+}
+
+section.cols-2 {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+section.cols-3 {
+  -webkit-column-count: 3;
+          column-count: 3;
 }
 
 div.content a.content--link {
@@ -221,5 +245,33 @@ select {
 
 option {
   color: var(--primary);
+}
+
+ul {
+  padding-left: 1.6rem;
+  -webkit-column-span: all;
+          column-span: all;
+}
+
+span.tidbit {
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+span.tidbit .hidden {
+  display: none;
+  position: absolute;
+  top: -1.6rem;
+  left: 100%;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 0.4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+span.tidbit:hover .hidden {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

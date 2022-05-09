@@ -51,12 +51,19 @@ h4 {
 	font-size: 2rem;
 }
 
+h5 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-top: 0.5rem;
+	column-span: all;
+}
+
 h1,
 h2,
 h3,
 h4 {
-	margin-bottom: 0.5em;
-
+	margin: 0.5em 0;
+	column-span: all;
 	& * {
 		font-size: inherit;
 	}
@@ -64,6 +71,18 @@ h4 {
 
 a {
 	// text-decoration: none;
+}
+
+section {
+	margin-top: 1.6rem;
+
+	&.cols-2 {
+		column-count: 2;
+	}
+
+	&.cols-3 {
+		column-count: 3;
+	}
 }
 
 div.content a.content--link {
@@ -76,4 +95,31 @@ select {
 
 option {
 	color: var(--primary);
+}
+
+ul {
+	padding-left: 1.6rem;
+	column-span: all;
+}
+
+span.tidbit {
+	position: relative;
+	font-weight: 600;
+	cursor: pointer;
+
+	& .hidden {
+		display: none;
+		position: absolute;
+		top: -1.6rem;
+		left: 100%;
+		background: var(--primary);
+		color: var(--secondary);
+		padding: 0.4rem;
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+
+	&:hover .hidden {
+		display: block;
+	}
 }

@@ -4,6 +4,7 @@ import { PostsMenu } from "./posts-menu.js";
 import { DropdownList, DropdownItem } from "./dropdown.js";
 import { ClimbingIvy } from "./climbing-ivy";
 import { Button, HrefButton } from "./buttons";
+import { ProjectsMenu } from "./projects-menu.js";
 
 customElements.define("header-component", Header);
 customElements.define("page-footer", Footer);
@@ -13,3 +14,4 @@ customElements.define("dropdown-item", DropdownItem);
 customElements.define("climbing-ivy", ClimbingIvy);
 customElements.define("main-button", Button);
 customElements.define("href-button", HrefButton);
+customElements.define("projects-menu", ProjectsMenu);
