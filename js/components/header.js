@@ -1,6 +1,6 @@
 import { BASE_URL } from "../global_variables.js";
 
-export default class Header extends HTMLElement {
+export class Header extends HTMLElement {
 	constructor() {
 		super();
 	}

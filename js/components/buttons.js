@@ -1,4 +1,4 @@
-class Button extends HTMLElement {
+export class Button extends HTMLElement {
 	constructor() {
 		super();
 	}
@@ -18,9 +18,7 @@ class Button extends HTMLElement {
 	}
 }
 
-customElements.define("main-button", Button);
-
-class HrefButton extends HTMLElement {
+export class HrefButton extends HTMLElement {
 	constructor() {
 		super();
 	}
@@ -41,5 +39,3 @@ class HrefButton extends HTMLElement {
 		}
 	}
 }
-
-customElements.define("href-button", HrefButton);

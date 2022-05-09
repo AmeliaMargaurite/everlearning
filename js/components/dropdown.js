@@ -1,4 +1,4 @@
-class DropdownList extends HTMLElement {
+export class DropdownList extends HTMLElement {
 	constructor() {
 		super();
 	}
@@ -15,15 +15,13 @@ class DropdownList extends HTMLElement {
 	}
 }
 
-customElements.define("dropdown-list", DropdownList);
-
 // Dropdown Items
 
 const dropdown_item_template = `
 <template
 `;
 
-class DropdownItem extends HTMLElement {
+export class DropdownItem extends HTMLElement {
 	constructor() {
 		super();
 		// this.attachShadow({ mode: "open" });
@@ -42,5 +40,3 @@ class DropdownItem extends HTMLElement {
 	    `;
 	}
 }
-
-customElements.define("dropdown-item", DropdownItem);

@@ -1,4 +1,4 @@
-class ClimbingIvy extends HTMLElement {
+export class ClimbingIvy extends HTMLElement {
 	constructor() {
 		super();
 
@@ -25,5 +25,3 @@ class ClimbingIvy extends HTMLElement {
 		this.innerHTML = pieces;
 	}
 }
-
-customElements.define("climbing-ivy", ClimbingIvy);
