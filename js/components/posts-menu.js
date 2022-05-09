@@ -1,11 +1,13 @@
-class PostsMenu extends HTMLElement {
+import { BASE_URL } from "../global_variables";
+
+export default class PostsMenu extends HTMLElement {
 	constructor() {
 		super();
 		// this.attachShadow({ mode: "open" });
 	}
 
 	async getPosts() {
-		const response = await fetch("/digital-garden/_posts.json");
+		const response = await fetch(BASE_URL + "/garden/_posts.json");
 		const json = await response.json();
 		return json;
 	}
@@ -17,7 +19,7 @@ class PostsMenu extends HTMLElement {
 				const post = posts[postUrl];
 				list += `
 					<li>
-						<a href="/digital-garden/${postUrl}.html">${post.title}</a>
+						<a href="${BASE_URL}/garden/${postUrl}.html">${post.title}</a>
 					</li>
 				`;
 			}
@@ -31,5 +33,3 @@ class PostsMenu extends HTMLElement {
 		});
 	}
 }
-
-customElements.define("posts-menu", PostsMenu);

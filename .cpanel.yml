@@ -3,10 +3,10 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home2/ameliama/forever.everlearning.com.au
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp digital-garden.html $DEPLOYPATH
+    - /bin/cp garden.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
     - /bin/cp -R components $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R digital-garden $DEPLOYPATH
+    - /bin/cp -R garden $DEPLOYPATH
     - /bin/cp -R imgs $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH

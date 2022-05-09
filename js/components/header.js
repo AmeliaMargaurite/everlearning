@@ -1,4 +1,6 @@
-class Header extends HTMLElement {
+import { BASE_URL } from "../global_variables.js";
+
+export default class Header extends HTMLElement {
 	constructor() {
 		super();
 	}
@@ -39,19 +41,21 @@ class Header extends HTMLElement {
 			<div class='menu'>
 				<div class='menu--switch' id='switch' ></div>
 				<ul>
-					<a href="/" class="${activePage === "home" ? "active" : ""}">
+					<a href="${BASE_URL}" class="${activePage === "home" ? "active" : ""}">
 						<li>
 						Home
 						</li>
 					</a>
-					<a href="/projects.html" class="${activePage === "projects" ? "active" : ""}">
+					<a href="${BASE_URL}/projects" class="${
+			activePage === "projects" ? "active" : ""
+		}">
 						<li>
 						Projects
 						</li>
 					</a>
-					<a href="/digital-garden.html" class="${activePage === "digital-garden" ? "active" : ""}">
+					<a href="${BASE_URL}/garden" class="${activePage === "garden" ? "active" : ""}">
 						<li>
-						Digital Garden
+						Garden
 						</li>
 					</a>
 				</ul>
@@ -90,5 +94,3 @@ class Header extends HTMLElement {
 		}
 	}
 }
-
-customElements.define("header-component", Header);

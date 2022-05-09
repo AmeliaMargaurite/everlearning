@@ -4,11 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- START Imports for Digital Garden Pages -->
+		<!-- START Imports for Garden Pages -->
 
-		<script src="../components/header.js" type="text/javascript" defer></script>
 		<script
-			src="../components/climbing-ivy.js"
+			src="../js/components/components.js"
+			type="module"
+			type="text/javascript"
+			defer
+		></script>
+		<script
+			src="../js/components/climbing-ivy.js"
 			type="text/javascript"
 			defer
 		></script>
@@ -17,21 +22,15 @@
 			defer
 		></script>
 
-		<script src="../components/posts-menu.js" type="text/javascript"></script>
-		<script
-			src="../components/page-footer.js"
-			type="text/javascript"
-			defer
-		></script>
 		<link rel="stylesheet" href="../css/main.css" />
 
-		<!-- END Imports for Digital Garden Pages -->
+		<!-- END Imports for Garden Pages -->
 
 		<title>Sustainable Web Development</title>
 	</head>
 	<body>
 		<header>
-			<header-component activePage="digital-garden"></header-component>
+			<header-component activePage="garden"></header-component>
 		</header>
 		<!-- Start Content -->
 		<div class="content">
@@ -43,6 +42,7 @@
 					my self-education around all things web development/internet/life, and
 					today stumbled onto this post from A List Apart
 					<a
+						class="content--link"
 						href="https://alistapart.com/article/sustainable-web-design-excerpt/"
 						>Sustainable Web Design, An Excerpt</a
 					>. I will admit that sustainability regarding the internet isn't
@@ -52,7 +52,8 @@
 					<br />
 					<br />
 					Within this excerpt from A List Apart, Tom mentions this tool,
-					<a href="https://www.websitecarbon.com/">Website Carbon Calculator</a
+					<a class="content--link" href="https://www.websitecarbon.com/"
+						>Website Carbon Calculator</a
 					>, his team has built to assess a websites carbon emissions, and the
 					form of energy the hosting service uses. The website I am currently
 					building has scored well in terms of cleanliness of the site.

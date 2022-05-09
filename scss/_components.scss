@@ -1,0 +1,23 @@
+a.href-button,
+button.main-button {
+	background: var(--secondary);
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	padding: 0.8rem;
+	border-radius: 4px;
+	text-decoration: none;
+	margin: 1.6rem;
+	box-shadow: 0 8px 10px -5px var(--primary);
+	transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 6px 10px -7px var(--primary);
+	}
+
+	&:active {
+		box-shadow: none;
+		transform: translateY(5px);
+		transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
+	}
+}

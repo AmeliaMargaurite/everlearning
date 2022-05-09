@@ -109,6 +109,42 @@ ul.posts a:hover {
   color: var(--blue200);
 }
 
+a.href-button,
+button.main-button {
+  background: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 1.6rem;
+  -webkit-box-shadow: 0 8px 10px -5px var(--primary);
+          box-shadow: 0 8px 10px -5px var(--primary);
+  -webkit-transition: -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+  transition: -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
+  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in, -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+  cursor: pointer;
+}
+
+a.href-button:hover,
+button.main-button:hover {
+  -webkit-box-shadow: 0 6px 10px -7px var(--primary);
+          box-shadow: 0 6px 10px -7px var(--primary);
+}
+
+a.href-button:active,
+button.main-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+  transition: -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in;
+  transition: transform 0.25s ease-in, box-shadow 0.25s ease-in, -webkit-transform 0.25s ease-in, -webkit-box-shadow 0.25s ease-in;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -175,7 +211,15 @@ h4 * {
   font-size: inherit;
 }
 
-div.content a {
+div.content a.content--link {
   padding: 0 0.4rem;
+}
+
+select {
+  background: var(--secondary);
+}
+
+option {
+  color: var(--primary);
 }
 /*# sourceMappingURL=main.css.map */

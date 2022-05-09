@@ -16,7 +16,7 @@ const cb_css = `
         </style>
 `;
 
-class Footer extends HTMLElement {
+export default class Footer extends HTMLElement {
 	constructor() {
 		super();
 	}
@@ -30,11 +30,7 @@ class Footer extends HTMLElement {
         ${children}
         </footer>
         `;
-		console.log(this);
 		const carbonBadge = this.querySelector("div#wcb");
-		console.log(carbonBadge);
 		carbonBadge.innerHTML += cb_css;
 	}
 }
-
-customElements.define("page-footer", Footer);

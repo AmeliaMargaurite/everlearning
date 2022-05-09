@@ -8,5 +8,10 @@
         "title": "Web Components",
         "progress": "0",
         "tags": ["web development", "environment", "learning"]
+    },
+    "components": {
+        "title": "Components",
+        "progress": "0",
+        "tags": ["web development", "learning"]
     }
 }
